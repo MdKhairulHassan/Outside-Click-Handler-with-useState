@@ -19,7 +19,10 @@ function App() {
         setHidden(false);
       }}>
       {/* <button className='py-3 px-7 bg-red-500 text-white rounded-sm' onClick={() => setHidden(true)}>Click</button> */}
-      <button className='py-3 px-7 bg-red-500 text-white rounded-sm' onClick={() => setHidden(!hidden)}>Click</button>
+      
+      <div onClick={() => setHidden(!hidden)}>
+      <button className='py-3 px-7 bg-red-500 text-white rounded-sm inline' >Click</button>
+      </div>
       </OutsideClickHandler>
           
       {hidden && (
